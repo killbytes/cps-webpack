@@ -1,4 +1,13 @@
+.nav {
+  padding-top: 10px;
+  @media (min-width: 320px) {
+    padding-top: 24px;
+  }
+}
+
+
 .nav ul {
+
   display: flex;
   overflow-x: scroll;
   gap: 19px;
@@ -41,11 +50,7 @@ li a {
   border: 2px solid #b8ffec;
   background-color: white;
 }
-@media (min-width: 767px) {
-  .nav {
-    padding-top: 16px;
-  }
-}
+
 @media (min-width: 1096px) {
   .nav::-webkit-scrollbar {
     /*display: none;*/
