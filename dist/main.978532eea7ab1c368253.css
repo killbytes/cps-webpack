@@ -465,7 +465,6 @@ li a {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-bottom: 1px solid #d9fff5;
   background: #f8f8f8;
   gap: 24px; }
   .header__mobile .btn:nth-child(-n+3) {
@@ -492,7 +491,8 @@ li a {
     .header__mobile {
       display: none; } }
   .header__mobile .header__top {
-    background: #fff; }
+    background: #fff;
+    border-bottom: 1px solid #d9fff5; }
   .header__mobile .header__left .btn {
     display: flex; }
 
