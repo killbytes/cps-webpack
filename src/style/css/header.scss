@@ -16,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border-bottom: 1px solid #d9fff5;
     background: #f8f8f8;
     gap: 24px;
 
@@ -55,6 +54,7 @@
 
     #{$this}__top {
       background: #fff;
+      border-bottom: 1px solid #d9fff5;
     }
 
     #{$this}__left {
