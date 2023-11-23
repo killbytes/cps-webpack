@@ -387,6 +387,12 @@ btn {
 .section {
   padding: 10px 0; }
 
+.nav {
+  padding-top: 10px; }
+  @media (min-width: 320px) {
+    .nav {
+      padding-top: 24px; } }
+
 .nav ul {
   display: flex;
   overflow-x: scroll;
@@ -426,10 +432,6 @@ li a {
   border-radius: 6px;
   border: 2px solid #b8ffec;
   background-color: white; }
-
-@media (min-width: 767px) {
-  .nav {
-    padding-top: 16px; } }
 
 @media (min-width: 1096px) {
   .nav::-webkit-scrollbar {
