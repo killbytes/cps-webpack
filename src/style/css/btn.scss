@@ -1,40 +1,38 @@
-
 .btn {
+    display: flex;
+    align-items: center;
     width: 40px;
     height: 40px;
-    background-size: cover;
-    background-position: center;
     border: none;
-    background-color: unset;
     cursor: pointer;
-}
 
-.btn-call {
-    background-image: url(./../images/call.png);
-}
-.btn-messages {
-    background-image: url(../images/chat.png);
-}
-.btn-user {
-    background-image: url(../images/profile.png);
-}
-.btn-settings {
-    background-image: url(../images/repair.png);
-}
-.btn-checkstatus {
-    background-image: url(../images/checkstatus.png);
-}
+    &-call {
+        background: url(./../images/call.png) no-repeat center center;
+    }
+    &-messages {
+        background: url(../images/chat.png) no-repeat center center;
+    }
+    &-user {
+        background: url(../images/profile.png) no-repeat center center;
+    }
+    &-settings {
+        background: url(../images/repair.png) no-repeat center center;
+    }
+    &-checkstatus {
+        background: url(../images/checkstatus.png) no-repeat center center;
+    }
+    &-search {
+        background: url(../images/search.png) no-repeat center center;
+    }
+    &-menu {
+        background: url(../images/burger.png) no-repeat center center;
+    }
+    &-close {
+        background: url(../images/burger-close.png) no-repeat center center;
+    }
 
-.btn-search {
-    background-image: url(../images/search.png);
+    &-with_text {
+        width: 173px;
+        background-position: right 50%;
+    }
 }
-
-.btn-menu {
-    background-image: url(../images/burger.png);
-}
-
-.btn-close {
-    background-image: url(../images/burger-close.png);
-}
-
-

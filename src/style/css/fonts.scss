@@ -1,7 +1,15 @@
 @font-face {
-    font-family: "lakes_my";
+    font-family: "lakes_my_light";
+    src: url("./../style/fonts/TTLakes-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "lakes_my_medium";
     src: url("./../style/fonts/TTLakes-Medium.woff") format("woff");
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }

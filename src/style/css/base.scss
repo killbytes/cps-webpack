@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: lakes_my;
+    font-family: lakes_my_medium;
     background-color: #f8f8f8;
 }
 
@@ -19,6 +19,10 @@ p {
 
     @media (min-width: 1119px) {
         line-height: 20px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
     }
 }
 
@@ -43,4 +47,14 @@ picture {
 
 img {
     width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: lakes_my_medium;
+}
+
+btn {
+    font-family: lakes_my_medium;
 }
