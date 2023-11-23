@@ -353,14 +353,14 @@ p {
 .main {
   display: flex;
   flex-direction: column;
-  margin-top: 4px; }
+  padding-top: 4px; }
   @media (min-width: 767px) {
     .main {
       flex-direction: row;
-      margin-top: 32px; } }
+      padding-top: 32px; } }
   @media (min-width: 1119px) {
     .main {
-      margin-top: 0px; } }
+      margin-top: 0; } }
 
 picture {
   width: 100%; }
