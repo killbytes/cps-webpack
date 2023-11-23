@@ -1,0 +1,40 @@
+.read-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.read-more__icon img {
+  width: auto;
+}
+
+.read-more__btn {
+  display: flex;
+  align-items: center;
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  -webkit-text-stroke-width: 0.3px;
+  background: none;
+  border: navajowhite;
+}
+.read-more__btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  background-image: url(../images/icon.png);
+  width: 8px;
+  height: 11px;
+  margin-right: 12px;
+}
+

@@ -1,0 +1,42 @@
+.list {
+}
+
+.list__item a {
+    color: #1B1C21;
+    font-family: lakes_my;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+
+.list__item {
+    padding-left: 24px;
+    position: relative;
+    list-style: none;
+}
+
+.list__item.active a {
+    color: #7E7E82;
+
+}
+
+.list__item.active:before {
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+.list__item .active {
+
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 32px;
+}

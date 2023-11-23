@@ -1,0 +1,56 @@
+@import "./css/fonts.scss";
+
+//@import "./css/normalize";
+@import "~normalize.css";
+
+@import "./css/base.scss";
+
+@import "./css/container.scss";
+
+@import "./css/section.scss";
+
+@import "./css/nav.scss";
+
+@import "./css/header.scss";
+
+@import "./css/breadcrumbs.scss";
+
+@import "./css/text-media.scss";
+
+@import "./css/read-more.scss";
+
+@import "./css/title.scss";
+
+@import "./css/btn.scss";
+
+@import "./css/list.scss";
+
+@import "./css/mobile-menu.scss";
+
+.hidden-item {
+  display: none;
+}
+
+.hidden-text {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .hidden-item {
+    display: block;
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+  }
+  @media (min-width: 1119px) {
+    margin-top: 18px;
+  }
+}
+
+.hidden-text {
+  display: none;
+  @media (min-width: 1119px) {
+    display: contents;
+  }
+}
+
