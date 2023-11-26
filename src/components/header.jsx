@@ -3,8 +3,6 @@ import {logPlugin} from "@babel/preset-env/lib/debug";
 
 export const Header = () => {
 
-
-
     function useWindowSize() {
         const [size, setSize] = useState([0]);
         useLayoutEffect(() => {
@@ -18,41 +16,16 @@ export const Header = () => {
         return size;
     }
 
-    // function ShowWindowDimensions(props) {
-    //     const width = useWindowSize();
-    //     return <span>Window size: {width}</span>;
-    // }
-    // let width = window.innerWidth;
-    let titleMobile = false;
-    let titleDesctop = true;
-
-    // const [titleMobile, setTitleMobile] = useState(false);
-    // const [titleDesctop, setTitleDesctop] = useState(true);
+    let titleMobile;
+    let titleDesctop;
 
     if (useWindowSize() < 1119) {
-        // setTitleMobile(!titleMobile);
         titleDesctop = '';
+        titleMobile = <h1 className='title__descr'>Услуги и сервисы</h1>
     } else {
-        // setTitleMobile(titleMobile);
-        titleDesctop = `<h1 className='title__descr'>Услуги и сервисы</h1>`;
+        titleDesctop = <h1 className='title__descr'>Услуги и сервисы</h1>;
+        titleMobile = '';
     }
-
-    // console.log("titleMobile ", titleMobile);
-    // console.log("titleDesctop", titleDesctop);
-
-
-
-    // const [titleMobile, setTitleMobile] = useState(false);
-    // let width = window.innerWidth;
-    // if (width < 1119) {
-    //     setTitleMobile(titleMobile);
-    // } else {
-    //     setTitleMobile(!titleMobile)
-    // }
-    // window.addEventListener("resize", addTitle);
-
-    // console.log(title)
-    // console.log(width)
 
     return (
         <header className="header">
@@ -65,22 +38,23 @@ export const Header = () => {
                         </div>
                     </div>
                     <div className="header__right">
-                        <button className="btn btn-call"></button>
-                        <button className="btn btn-messages"></button>
-                        <button className="btn btn-user"></button>
+                        <div className="header__btns">
+                            <button className="btn btn-call"></button>
+                            <button className="btn btn-messages"></button>
+                            <button className="btn btn-user"></button>
+                        </div>
                         <button className="btn btn-settings"></button>
                         <button className="btn btn-checkstatus"></button>
                     </div>
                 </div>
                 <div className="title">
-                    {/*{titleMobile && <h1 className="title__descr">Услуги и сервисы</h1>}*/}
+                    {titleMobile}
                 </div>
             </div>
             <div className="header__desctop">
                 <div className="header__left">
                     <div className="title">
                         {titleDesctop}
-                        {/*<ShowWindowDimensions/>*/}
                     </div>
                 </div>
                 <div className="header__right">
