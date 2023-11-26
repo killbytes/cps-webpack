@@ -6,4 +6,4 @@ var __webpack_exports__ = {};
 console.log('analytics');
 /******/ })()
 ;
-//# sourceMappingURL=analitics.4a011a15e77bf18985c2.js.map
+//# sourceMappingURL=analitics.1718645a331f1d169f00.js.map
