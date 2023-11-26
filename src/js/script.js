@@ -1,11 +1,15 @@
+
+
 const mobile = document.querySelector(".header__mobile");
 const mobileTitle = mobile.querySelector(".title");
 const desctop = document.querySelector(".header__desctop");
 const desctopTitle = desctop.querySelector(".title");
 
-let addTitlt = () => {
+let addTitle = () => {
   const descr = mobileTitle.querySelector(".title__descr");
   const desctopDescr = desctopTitle.querySelector(".title__descr");
+  console.log(descr)
+
   let width = window.innerWidth;
 
   if (width < 1119) {
@@ -33,5 +37,7 @@ let addTitlt = () => {
     }
   }
 };
-document.addEventListener("DOMContentLoaded", addTitlt);
-window.addEventListener("resize", addTitlt);
+
+setTimeout(() => document.addEventListener("DOMContentLoaded", addTitle), 4000);
+window.addEventListener("resize", addTitle);
+

@@ -1,7 +1,3 @@
-// export default function testExport() {
-//     return 'testExport';
-// }
-
 export default class Post {
     constructor(title, img) {
         this.title = title

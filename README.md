@@ -15,3 +15,12 @@ npm i -D node-sass sass-loader
 
 
 npm install --save-dev mini-css-extract-plugin
+
+npm install --save-dev babel-loader @babel/core
+npm install --save-dev @babel/preset-env
+
+npm install --save-dev @babel/preset-react
+
+npm i react react-dom
+
+npm install null-loader --save-dev

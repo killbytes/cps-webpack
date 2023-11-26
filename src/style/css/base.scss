@@ -21,7 +21,7 @@ p {
         line-height: 20px;
     }
 
-    &:not(:last-child) {
+    &:not(:last-of-type) {
         margin-bottom: 25px;
     }
 }
@@ -57,4 +57,9 @@ a {
 
 btn {
     font-family: lakes_my_medium;
+}
+
+li {
+    text-decoration: unset;
+    list-style: none;
 }
