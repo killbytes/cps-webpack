@@ -388,10 +388,10 @@ btn {
   padding: 10px 0; }
 
 .nav {
-  padding-top: 10px; }
-  @media (min-width: 320px) {
+  padding-top: 24px; }
+  @media (min-width: 1119px) {
     .nav {
-      padding-top: 24px; } }
+      padding-top: 8px; } }
 
 .nav ul {
   display: flex;
@@ -784,3 +784,5 @@ span {
 .lang {
   margin-top: 40px; }
 
+
+/*# sourceMappingURL=main.4a011a15e77bf18985c2.css.map*/

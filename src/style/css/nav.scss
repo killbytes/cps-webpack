@@ -1,10 +1,9 @@
 .nav {
-  padding-top: 10px;
-  @media (min-width: 320px) {
-    padding-top: 24px;
+  padding-top: 24px;
+  @media (min-width: 1119px) {
+    padding-top: 8px;
   }
 }
-
 
 .nav ul {
   display: flex;
