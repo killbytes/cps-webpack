@@ -8,6 +8,26 @@
         &:not(:last-child) {
             margin-bottom: 32px;
         }
+        &--active {
+            &:before {
+                content: '';
+                left: 0;
+                top: 50%;
+                width: 4px;
+                height: 32px;
+                background: #41F6D7;
+                position: absolute;
+                transform: translate(0, -50%);
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+            }
+            .list__link {
+                color: #7E7E82;
+                font-weight: 500;
+                line-height: 24px; /* 150% */
+                letter-spacing: -0.2px;
+            }
+        }
     }
 
     &__link {
@@ -18,25 +38,6 @@
 
         &:hover {
             transform: scale(1.08);
-        }
-    }
-
-    &__active {
-        &:before {
-            content: '';
-            left: 0;
-            top: 50%;
-            width: 4px;
-            height: 32px;
-            background: #41F6D7;
-            position: absolute;
-            transform: translate(0, -50%);
-        }
-        .list__link {
-            color: #7E7E82;
-            font-weight: 500;
-            line-height: 24px; /* 150% */
-            letter-spacing: -0.2px;
         }
     }
 }
