@@ -15,18 +15,15 @@
         align-items: center;
         padding: 0 24px;
         padding-top: 24px;
+        gap: 5px;
+    }
 
-        .btn-close {
-            margin-right: 5px;
-        }
-
-        .btn-search {
-            margin-left: auto;
-        }
+    .btn-search {
+        margin-left: auto;
     }
 
     &__main {
-        margin-top: 50px;
+        padding-top: 50px;
     }
 
     &__footer {
@@ -41,13 +38,17 @@
         &__link {
             font-weight: 500;
             //color: #1B1C21;
-        }
+            transition: .3s;
 
-        &__active {
-            color: #7E7E82;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: -0.2px;
+            &--active {
+                color: #7E7E82;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+            }
+            &:hover {
+                //transform: scale(1.08);
+            }
         }
     }
 

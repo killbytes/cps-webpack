@@ -31,24 +31,37 @@
     #{$this}__top {
       background: #fff;
       border-bottom: 1px solid #d9fff5;
+      background: url(./../images/divider.png) center right 128px no-repeat, #fff;
+
+      @media (min-width: 767px) {
+        background: url(./../images/divider.png) center right 128px no-repeat,url(./../images/divider.png) center left 76px no-repeat,#fff;
+      }
     }
 
     #{$this}__left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+
+      @media (min-width: 767px) {
+        gap: 40px;
+      }
+
       .btn {
         display: flex;
       }
-    }
-    #{$this}__left {
-      position: relative;
     }
   }
 
   &__btns {
     display: flex;
-    border-right: 2px solid #eaeaea;
-    padding-right: 20px;
+    padding-right: 0;
     gap: 16px;
     min-height: 40px;
+    @media (min-width: 767px) {
+      padding-right: 20px;
+    }
 
     .btn {
       display: none;
@@ -69,7 +82,7 @@
     width: auto;
   }
 
-  &__left, &__right {
+  &__right {
     display: flex;
     gap: 16px;
     align-items: center;

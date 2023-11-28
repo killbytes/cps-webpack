@@ -1,3 +1,9 @@
+@keyframes rotate {
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -5,15 +11,26 @@
     height: 40px;
     border: none;
     cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
 
     &-call {
         background: url(./../images/call.png) no-repeat center center;
+        &:hover {
+            transform: scale(1.08);
+        }
     }
     &-messages {
         background: url(../images/chat.png) no-repeat center center;
+        &:hover {
+            transform: scale(1.08);
+        }
     }
     &-user {
         background: url(../images/profile.png) no-repeat center center;
+        &:hover {
+            transform: scale(1.08);
+        }
     }
     &-settings {
         background: url(../images/repair.png) no-repeat center center;
@@ -23,12 +40,21 @@
     }
     &-search {
         background: url(../images/search.png) no-repeat center center;
+
+        &:hover {
+            transform: scale(1.08);
+        }
     }
     &-menu {
         background: url(../images/burger.png) no-repeat center center;
     }
     &-close {
         background: url(../images/burger-close.png) no-repeat center center;
+
+        &:hover {
+            animation-name: rotate;
+            animation-duration: 1s;
+        }
     }
 
     &-with_text {
