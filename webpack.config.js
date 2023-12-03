@@ -44,6 +44,11 @@ module.exports = {
             filename: "mobile-menu.html",
             template: './mobile-menu.html'
         }),
+        new HTMLWebpackPlugin({
+            filename: "swiper.html",
+            template: './swiper.html'
+        }),
+
         // new CleanWebpackPlugin()
         new MiniCssExtractPlugin({
             filename: '[name].[hash].css'
