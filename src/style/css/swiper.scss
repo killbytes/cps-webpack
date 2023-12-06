@@ -1,0 +1,23 @@
+.swiper {
+  //width: 100%;
+  //height: 300px;
+
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  //width: 100%;
+  //height: 100%;
+  @media (min-width: 768px) {
+
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+}

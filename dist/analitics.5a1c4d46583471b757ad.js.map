@@ -1,1 +1,0 @@
-{"version":3,"file":"analitics.5a1c4d46583471b757ad.js","mappings":"AAAAA,QAAQC,IAAI","sources":["webpack:///./analytics.js"],"sourcesContent":["console.log('analytics');\r\n"],"names":["console","log"],"sourceRoot":""}

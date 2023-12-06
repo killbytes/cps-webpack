@@ -55,6 +55,9 @@
             animation-duration: 1s;
         }
     }
+    &-go {
+        background: url(../images/go.png) no-repeat center center;
+    }
 
     &-with_text {
         width: 173px;

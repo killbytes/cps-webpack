@@ -1,4 +1,5 @@
 .list {
+    $this: &;
 
     &__item {
         padding-left: 24px;
@@ -8,7 +9,7 @@
         &:not(:last-child) {
             margin-bottom: 32px;
         }
-        &--active {
+        &:has(#{$this}__link--active) {
             &:before {
                 content: '';
                 left: 0;
@@ -21,12 +22,6 @@
                 border-top-right-radius: 50%;
                 border-bottom-right-radius: 50%;
             }
-            .list__link {
-                color: #7E7E82;
-                font-weight: 500;
-                line-height: 24px; /* 150% */
-                letter-spacing: -0.2px;
-            }
         }
     }
 
@@ -38,6 +33,12 @@
 
         &:hover {
             transform: scale(1.08);
+        }
+        &--active {
+            color: #7E7E82;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.2px;
         }
     }
 }
