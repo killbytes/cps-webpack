@@ -1,4 +1,4 @@
-let brands = document.querySelector('.brands');
+/*let brands = document.querySelector('.brands');
 let brandsCard = brands.querySelector('.brands__card');
 let readMore = brands.querySelector('.read-more');
 
@@ -10,4 +10,4 @@ readMore.addEventListener('click', (e) => {
     } else {
         readMore.querySelector('.read-more__btn').textContent = 'Скрыть';
     }
-});
+});*/
