@@ -1,8 +1,12 @@
+@use "./card.scss";
+
 .brands {
   //min-width: 0;
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: 40px;
+  row-gap: 24px;
 
   &__title {
     background: linear-gradient(to right, #F8F8F8 0%, #FFF 98.61%);
@@ -15,6 +19,7 @@
     letter-spacing: -0.2px;
     text-transform: uppercase;
     padding: 16px 32px;
+    border-top: 1px #d9fff5 solid;
   }
 
   &__card {
@@ -42,44 +47,13 @@
 
   .read-more {
     @media (min-width: 767px) {
-      width: 130px;
-      position: absolute;
-      bottom: -10px;
-      left: 32px;
-      transform: translate(0, 100%);
+      width: 160px;
+      //position: absolute;
+      //bottom: -10px;
+      //left: 32px;
+      padding-top: 24px;
+      padding-left: 32px;
+      //transform: translate(0, 100%);
     }
-  }
-}
-
-.card {
-  margin:0;
-  padding: 16px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 240px;
-  height: 72px;
-  //background-color: #FFF;
-  border: 1px solid #EAEAEA;
-  border-radius: 6px;
-  background: url(../images/go.png) no-repeat center center #FFF;
-  background-position: 90% 50%;
-  position: relative;
-
-  img {
-    width: auto;
-    box-sizing: border-box;
-  }
-
-  .btn {
-    margin-left: auto;
-  }
-
-  &__link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
   }
 }

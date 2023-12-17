@@ -12,6 +12,30 @@ body {
     color: #1b1c21;
 }
 
+#app {
+    padding-left: unset;
+    @media (min-width: 1119px) {
+        padding-left: 320px;
+    }
+}
+
+#app:has(.feedback_open) {
+    & > *:not(.feedback) {
+        filter: blur(5px);
+        pointer-events: none;
+        transition: 0.5s;
+    }
+}
+
+#app:has(.feedback-call_open) {
+    & > *:not(.feedback-call) {
+        opacity: 0.1;
+        //filter: blur(5px);
+        //pointer-events: none;
+        transition: 0.5s;
+    }
+}
+
 p {
     font-size: 14px;
     font-style: normal;

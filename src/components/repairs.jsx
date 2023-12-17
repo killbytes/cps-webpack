@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-export const Brands = () => {
+export const Repairs = () => {
 
     const [isClicked, setIsClicked] = useState(false);
     const handleClick = () => {
@@ -36,35 +36,35 @@ export const Brands = () => {
 
         <>
             {   swiperInitialized ?
-                <div className="brands">
-                    <div className="brands__title">Ремонт техники различных брендов</div>
+                <div className="brands repairs">
+                    <div className="title-block">Ремонт различных видов техники</div>
                     <Swiper
-                    modules={[Navigation, Pagination]}
-                    className="swiper"
-                    spaceBetween={16}
-                    slidesPerView="auto"
-                    initialSlide={0}
-                    pagination={{ clickable: true }}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                        modules={[Navigation, Pagination]}
+                        className="swiper repairs"
+                        spaceBetween={16}
+                        slidesPerView="auto"
+                        initialSlide={0}
+                        pagination={{ clickable: true }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
                     >
                         <SwiperSlide className="card swiper-slide">
-                            <img src="./images/lenovo.svg" alt="img"/>
+                            <p>Ремонт ноутбуков</p>
                             <a className="card__link" href="#"></a>
                         </SwiperSlide>
 
                         <SwiperSlide className="card swiper-slide">
-                            <img src="./images/Samsung.svg" alt="img"/>
+                            <p>Ремонт планшетов</p>
                             <a className="card__link" href="#"></a>
                         </SwiperSlide>
 
                         <SwiperSlide className="card swiper-slide">
-                            <img src="./images/Apple.svg" alt="img"/>
+                            <p>Ремонт ПК </p>
                             <a className="card__link" href="#"></a>
                         </SwiperSlide>
 
                         <SwiperSlide className="card swiper-slide">
-                            <img src="./images/VS.svg" alt="img"/>
+                            <p>Ремонт  мониторов</p>
                             <a className="card__link" href="#"></a>
                         </SwiperSlide>
 
@@ -104,25 +104,24 @@ export const Brands = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-
-                 :
-                <div className="brands">
-                    <div className="brands__title">Ремонт техники различных брендов</div>
+                :
+                <div className="brands repairs">
+                    <div className="title-block">Ремонт различных видов техники</div>
                     <ul className={isClicked ? 'brands__card brands__card--active' : 'brands__card'}>
                         <li className="card">
-                            <img src="./images/lenovo.svg" alt="img"/>
+                            <p>Ремонт ноутбуков</p>
                             <a className="card__link" href="#"></a>
                         </li>
                         <li className="card">
-                            <img src="./images/Samsung.svg" alt="img"/>
+                            <p>Ремонт планшетов</p>
                             <a className="card__link" href="#"></a>
                         </li>
                         <li className="card">
-                            <img src="./images/Apple.svg" alt="img"/>
+                            <p>Ремонт ПК </p>
                             <a className="card__link" href="#"></a>
                         </li>
                         <li className="card">
-                            <img src="./images/VS.svg" alt="img"/>
+                            <p>Ремонт  мониторов</p>
                             <a className="card__link" href="#"></a>
                         </li>
                         <li className="card">
@@ -163,4 +162,3 @@ export const Brands = () => {
         </>
     )
 }
-

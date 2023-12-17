@@ -48,7 +48,13 @@
         background: url(../images/burger.png) no-repeat center center;
     }
     &-close {
-        background: url(../images/burger-close.png) no-repeat center center;
+        //background: url(../images/burger-close.png) no-repeat center center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background: #ff3d77 url(../images/burger-close-transp.png) no-repeat center center;
+        transition: 0.2s;
 
         &:hover {
             animation-name: rotate;

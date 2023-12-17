@@ -10,6 +10,7 @@
 
     @media (min-width: 1119px) {
         flex-direction: row;
+        padding-bottom: 50px;
     }
 
     &__content {
@@ -21,12 +22,17 @@
     &__text {
         height: 160px;
         overflow-y: hidden;
+
+        &--active {
+            height: 100%;
+        }
     }
 
     .read-more {
-        position: absolute;
-        bottom: -10px;
-        transform: translate(0, 100%);
+        //position: absolute;
+        //bottom: -10px;
+        //transform: translate(0, 100%);
+        margin-top: 10px;
     }
 
     &__media {

@@ -28,7 +28,8 @@
     &__link {
         cursor: pointer;
         display: block;
-        width: 100%;
+        //width: 100%;
+        width: max-content;
         transition: .3s;
 
         &:hover {
