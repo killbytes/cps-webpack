@@ -40,14 +40,14 @@ module.exports = {
             // title: 'Webpack title', // если нет шаблона
             template: './index.html'
         }),
-        new HTMLWebpackPlugin({
+/*        new HTMLWebpackPlugin({
             filename: "mobile-menu.html",
             template: './mobile-menu.html'
-        }),
-        new HTMLWebpackPlugin({
+        }),*/
+/*        new HTMLWebpackPlugin({
             filename: "swiper.html",
             template: './swiper.html'
-        }),
+        }),*/
 
         // new CleanWebpackPlugin()
         new MiniCssExtractPlugin({

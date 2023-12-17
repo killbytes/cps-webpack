@@ -1,0 +1,19 @@
+.button {
+  font-family: lakes_mybold;
+  display: flex;
+  align-content: center;
+  justify-self: end;
+  width: 120px;
+  height: 32px;
+  border-radius: 10px;
+  padding: 0 12px;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15000000596046448px;
+  color: white;
+  background: #ff3e79 url(./../images/arrow.png) no-repeat center right 10px;
+  transition: 0.2s;
+  border: none;
+}

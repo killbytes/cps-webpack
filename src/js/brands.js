@@ -1,9 +1,8 @@
-let brands = document.querySelector('.brands');
+/*let brands = document.querySelector('.brands');
 let brandsCard = brands.querySelector('.brands__card');
 let readMore = brands.querySelector('.read-more');
 
 readMore.addEventListener('click', (e) => {
-    console.log(brandsCard);
     brandsCard.classList.toggle('brands__card--active');
     console.log(readMore.querySelector('.read-more__btn').textContent)
     if(readMore.querySelector('.read-more__btn').textContent == 'Скрыть') {
@@ -11,4 +10,4 @@ readMore.addEventListener('click', (e) => {
     } else {
         readMore.querySelector('.read-more__btn').textContent = 'Скрыть';
     }
-});
+});*/

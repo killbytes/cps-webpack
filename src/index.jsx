@@ -13,15 +13,21 @@ import Image7 from '@/images/hp.svg';
 import Image8 from '@/images/Samsung.svg';
 import Image9 from '@/images/sony.svg';
 import Image10 from '@/images/VS.svg';
+// import Image11 from '@/images/arrow.png';
 import json from './assets/json.json';
 import React from "react";
 import ReactDom, {render} from "react-dom/client";
-import Swiper from "./swiper";
+// import Swiper from "./swiper";
 import {App} from "@/App";
+import { BrowserRouter } from 'react-router-dom'
 
 const post = new Post('Web Post Title', Image);
 console.log('Post to String:', post.toString());
 console.log('JSON:', json);
 
-// const root = ReactDom.createRoot(document.getElementById('app'));
-// root.render(<App/>)
+const root = ReactDom.createRoot(document.getElementById('app'));
+root.render(
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
+)

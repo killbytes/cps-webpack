@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function(){
         cards.forEach(elem => {
             elem.classList.add('swiper-slide');
         });
-
-
         await Swiper.append(copyBrandsCard);
         return;
     }
@@ -44,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
             // Optional parameters
             // direction: 'vertical',
             // loop: true,
-            slidesPerView: 1.2,
+            slidesPerView: "auto",
             spaceBetween: 16,
             // slidesPerGroup: 1,
             initialSlide: 0,  // first slide display

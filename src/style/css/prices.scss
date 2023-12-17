@@ -1,0 +1,66 @@
+@use "rows";
+@use "button.scss";
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  row-gap: 24px;
+
+  &__slide {
+    display: grid;
+    background: white;
+    grid-template-areas:
+        "info_1 info_1 info_1 info_1"
+        "info_2 info_2 info_2 info_2"
+        "info_3 info_3 info_3 btn";
+    height: 200px;
+    grid-row-gap: 16px;
+    width: 260px;
+    border-radius: 5px;
+    padding: 16px;
+
+    .button {
+      grid-area: btn;
+    }
+  }
+
+  &__info {
+    .title {
+      background-color: unset;
+      color: #7e7e82;
+      margin-bottom: unset;
+    }
+    &:nth-child(1) {
+      grid-area: info_1;
+    }
+    &:nth-child(2) {
+      grid-area: info_2;
+    }
+    &:nth-child(3) {
+      grid-area: info_3;
+    }
+  }
+
+  &__bottom-info {
+    width: 100%;
+    padding: 0 16px 0;
+
+    @media (min-width: 767px) {
+      width: 490px;
+      padding: 0 32px 0;
+    }
+  }
+
+  &__bottom-link {
+    width: 90%;
+    background: url(../images/more_arr_link.png) no-repeat right -7%;
+    padding: 0 16px 47px;
+    font-family: "lakes_my_medium";
+
+    @media (min-width: 767px) {
+      width: 370px;
+      padding: 0 32px 47px;
+    }
+  }
+}
