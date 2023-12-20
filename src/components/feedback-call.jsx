@@ -10,7 +10,7 @@ export const FeedbackCall = (props) => {
             <button className="btn btn-close" onClick={toggleFeedbackClose}></button>
             <div className="title"><h2 className="title__descr">Заказать звонок</h2></div>
             <form action="" className="feedback__form">
-                <input type="text" className="feedback__input-text" placeholder="Телефон"/>
+                <input type="number" className="feedback__input-text" placeholder="Телефон"/>
                     <p className="feedback__description">
                         Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с
                         нашей <a>политикой конфиденциальности</a>

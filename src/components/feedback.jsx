@@ -10,9 +10,9 @@ export const Feedback = (props) => {
             <button className="btn btn-close" onClick={toggleFeedbackClose}></button>
             <div className="title"><h2 className="title__descr">Услуги и сервисы</h2></div>
             <form action="" className="feedback__form">
-                <input type="text" className="feedback__input-text" placeholder="Имя"/>
-                <input type="text" className="feedback__input-text" placeholder="Телефон"/>
-                <input type="text" className="feedback__input-text" placeholder="Электронная почта"/>
+                <input type="text" min="3" className="feedback__input-text" placeholder="Имя" required />
+                <input type="number" className="feedback__input-text" placeholder="Телефон" required/>
+                <input type="email" className="feedback__input-text" placeholder="Электронная почта"/>
                 <textarea name="" id="" className="feedback__input-textarea" placeholder="Сообщение"></textarea>
                 <p className="feedback__description">
                     Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и

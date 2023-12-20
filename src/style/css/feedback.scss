@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-  width: 440px;
+  width: 100%;
   min-height: 100vh;
   right: 0;
   top: 0;
@@ -14,13 +14,22 @@
   transform: translateX(120%);
   padding-top: 40px;
 
+  @media (min-width: 440px) {
+    width: 440px;
+  }
+
   &_open {
     transform: translateX(0);
   }
 
   .btn-close {
-    position: absolute;
-    right: 470px;
+    margin-left: 30px;
+
+    @media (min-width: 530px) {
+      padding-left: unset;
+      position: absolute;
+      right: 470px;
+    }
   }
 
   .title {

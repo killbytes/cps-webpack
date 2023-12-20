@@ -126,7 +126,7 @@ export const Prices = () => {
             </Swiper>
 
             <p className="prices__bottom-info">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-            <a href="#" className="prices__bottom-link">Получить коммерческое предложение</a>
+            <div className="prices__bottom-link"><a href="#" >Получить коммерческое предложение</a></div>
         </div>
             :
         <div className="prices">
@@ -171,7 +171,7 @@ export const Prices = () => {
             </div>
 
             <p className="prices__bottom-info">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-            <a href="#" className="prices__bottom-link">Получить коммерческое предложение</a>
+            <div className="prices__bottom-link"><a href="#" >Получить коммерческое предложение</a></div>
         </div>
     );
 }
