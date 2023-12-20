@@ -31,7 +31,7 @@ body {
     & > *:not(.feedback-call) {
         opacity: 0.1;
         //filter: blur(5px);
-        //pointer-events: none;
+        pointer-events: none;
         transition: 0.5s;
     }
 }

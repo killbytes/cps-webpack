@@ -49,9 +49,8 @@ export const Header = (props) => {
             if (menuRef.current && (!event.target.classList.contains("btn-menu")) && !menuRef.current.contains(event.target)) {
                 setMenuOpen(false);
             }
-
             if (event.target.className === 'mobile-menu mobile-menu_open') {
-                if (event.clientX > 325 && event.clientX < 730) {
+                if (event.clientX > 325 && event.clientX < 1070) {
                     setMenuOpen(false);
                 }
             }
